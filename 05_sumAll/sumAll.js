@@ -3,7 +3,8 @@ const sumAll = function(num1, num2) {
     let finalSum = 0;
 
     // condition: both arguments are positive integers
-    if (num1 > 0 && num2 > 0) {
+    // another condition: both arguments are numbers
+    if ((num1 > 0 && num2 > 0) && (typeof num1 == "number" && typeof num2 == "number"))  {
         // condition: the first number is the lowest
         if (num1 < num2) {
         // include both num1 and num2 in the loop
